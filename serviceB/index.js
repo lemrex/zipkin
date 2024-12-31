@@ -7,7 +7,7 @@ const {HttpLogger} = require('zipkin-transport-http');
 const app = express();
 const port = 3001;
 
-// Setup the tracer with ExplicitContext
+// Setting up the tracer with ExplicitContext
 const tracer = new Tracer({
   ctxImpl: new ExplicitContext(), // Use ExplicitContext for in-process context
   recorder: new BatchRecorder({

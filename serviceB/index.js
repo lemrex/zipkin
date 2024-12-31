@@ -12,7 +12,7 @@ const tracer = new Tracer({
   ctxImpl: new ExplicitContext(), // Use ExplicitContext for in-process context
   recorder: new BatchRecorder({
     logger: new HttpLogger({
-      endpoint: 'http://203.123.85.49:9411/api/v2/spans', // Zipkin endpoint
+      endpoint: 'http://x.x.x.x:9411/api/v2/spans', // Zipkin endpoint
       jsonEncoder: JSON_V2,
     }),
   }),
